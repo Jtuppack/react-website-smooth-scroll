@@ -13,6 +13,7 @@ import {Nav,
 
 const Navbar  = ({ toggle }) => {
   return (
+      //Remove the onClick elements from each onClick={toggle}
     <>
         <Nav>
             <NavbarContainer>
@@ -22,16 +23,16 @@ const Navbar  = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='about' onClick={toggle}>About</NavLinks>
+                        <NavLinks to='about'>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='discover' onClick={toggle}>Discover</NavLinks>
+                        <NavLinks to='discover'>Discover</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='services' onClick={toggle}>Services</NavLinks>
+                        <NavLinks to='services'>Services</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='signup' onClick={toggle}>Signup</NavLinks>
+                        <NavLinks to='signup'>Signup</NavLinks>
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
